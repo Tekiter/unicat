@@ -1,0 +1,62 @@
+
+
+start:
+
+    #print "Num > \n"
+    input 10
+
+    sub 10, $"0"
+
+    # handling 2 digits
+    if 11 < $11 => main
+    
+
+    sub 11, $"0"
+    mul 10, $10
+    add 10, 11
+
+    
+    # handling 3 digits
+    if 12 < $11 => main
+
+    sub 12, $"0"
+    mul 10, $10
+    add 10, 12
+
+
+main:
+
+
+# for (int i = 0; i < n; i++)
+    set 1, 0
+    jmp compare1
+loop1:
+    
+    mov 3, 1
+    add 3, $1
+
+
+    # for (int j = 0; j < i+1; j++)
+        set 2, 0
+        jmp compare2
+    loop2:
+
+        print "*"
+
+        add 2, $1
+    compare2:
+        if 2 < 3 => loop2
+
+
+    print "\n"
+
+    add 1, $1
+compare1:
+    if 1 < 10 => loop1
+
+
+exit:
+    exit
+
+
+
